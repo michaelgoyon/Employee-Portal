@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 04, 2022 at 05:41 AM
+-- Generation Time: Jan 24, 2023 at 03:58 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.4
 
@@ -14,8 +14,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `employeeportaldb`
 --
-CREATE DATABASE IF NOT EXISTS `employeeportaldb` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-USE `employeeportaldb`;
 
 -- --------------------------------------------------------
 
@@ -23,7 +21,6 @@ USE `employeeportaldb`;
 -- Table structure for table `audit_logs`
 --
 
-DROP TABLE IF EXISTS `audit_logs`;
 CREATE TABLE `audit_logs` (
   `id` int(11) NOT NULL,
   `dtime` varchar(255) NOT NULL,
@@ -778,7 +775,223 @@ INSERT INTO `audit_logs` (`id`, `dtime`, `uname`, `form`) VALUES
 (769, '09/21/2022 12:23:42', 'mike.castillo', 'Edited List of OSH Programs and Activites'),
 (770, '09/21/2022 12:24:12', 'mike.castillo', 'Edited List of OSH Programs and Activites'),
 (771, '09/21/2022 12:24:22', 'mike.castillo', 'Edited List of OSH Programs and Activites'),
-(772, '09/21/2022 12:26:46', 'mike.castillo', 'Edited List of OSH Programs and Activites');
+(772, '09/21/2022 12:26:46', 'mike.castillo', 'Edited List of OSH Programs and Activites'),
+(773, '11/09/2022 12:25:14', 'mike.castillo', 'Edited Payreto ID'),
+(774, '11/09/2022 12:26:15', 'mike.castillo', 'Edited Payreto ID'),
+(775, '11/09/2022 12:30:03', 'mike.castillo', 'Edited Payreto ID'),
+(776, '11/09/2022 12:31:07', 'mike.castillo', 'Edited Payreto ID'),
+(777, '11/09/2022 12:33:51', 'mike.castillo', 'i_referral'),
+(778, '11/09/2022 12:34:11', 'mike.castillo', 'concerns'),
+(779, '11/09/2022 12:34:31', 'mike.castillo', 'Edited Payreto ID'),
+(780, '11/17/2022 11:06:33', 'mike.castillo', 'Deleted user: test2'),
+(781, '11/17/2022 11:07:28', 'mike.castillo', 'Reset password of user: testtest@payreto.com'),
+(782, '11/17/2022 11:08:21', 'mike.castillo', 'Added user: Banana.ananab@gmail.com'),
+(783, '11/18/2022 09:17:04', 'mike.castillo', 'Edited Activities and Events'),
+(784, '11/18/2022 09:17:08', 'mike.castillo', 'Edited Post-Event Surveys'),
+(785, '11/18/2022 09:17:23', 'mike.castillo', 'Edited Foodpanda Account'),
+(786, '11/18/2022 09:17:34', 'mike.castillo', 'Edited Foodpanda Account'),
+(787, '11/23/2022 15:03:16', 'mike.castillo', ''),
+(788, '11/23/2022 15:03:55', 'mike.castillo', 'Edited Technology Request Form'),
+(789, '11/23/2022 15:04:50', 'mike.castillo', 'Edited Technology Request Form'),
+(790, '11/23/2022 15:04:54', 'mike.castillo', 'Edited Technology Request Form'),
+(791, '11/23/2022 15:16:49', 'mike.castillo', 'Added user: wompus@gmail.com'),
+(792, '12/02/2022 11:56:24', 'mike.castillo', 'Edited user: psmichaelcastillo.payretointern@gmail.com'),
+(793, '12/02/2022 11:56:36', 'mike.castillo007', 'Edited user: psmichaelcastillo.payretointern@gmail.com'),
+(794, '12/02/2022 11:56:54', 'mike.castillo', 'Edited user: wompus@gmail.com'),
+(795, '12/02/2022 12:01:44', 'juan.delacruz@payreto.com', 'Edited Payreto Store'),
+(796, '12/02/2022 12:02:14', 'mike.castillo', 'Edited Post-Event Surveys'),
+(797, '12/02/2022 12:02:18', 'juan.delacruz@payreto.com', 'Edited Payreto Store'),
+(798, '12/02/2022 12:02:22', 'juan.delacruz@payreto.com', 'Edited Payreto Store'),
+(799, '12/02/2022 12:04:44', 'juan.delacruz@payreto.com', 'Edited Payreto Store'),
+(800, '12/02/2022 12:07:06', 'mike.castillo', 'Deleted Event: Psol Event'),
+(801, '12/02/2022 12:07:08', 'juan.delacruz@payreto.com', 'Edited Payreto Store'),
+(802, '12/02/2022 12:07:08', 'mike.castillo', 'Deleted Event: Pmanagement Event Post-survey'),
+(803, '12/02/2022 12:07:18', 'juan.delacruz@payreto.com', 'Edited Payreto Store'),
+(804, '12/02/2022 12:07:20', 'juan.delacruz@payreto.com', 'Edited Payreto Store'),
+(805, '12/02/2022 12:07:28', 'juan.delacruz@payreto.com', 'Edited Payreto Store'),
+(806, '12/02/2022 12:08:53', 'juan.delacruz@payreto.com', 'Edited Payreto Store'),
+(807, '12/02/2022 12:08:55', 'mike.castillo', 'Deleted Event: Patrick Tria, EXPOSED! Click here to know more!'),
+(808, '12/02/2022 12:09:10', 'juan.delacruz@payreto.com', 'Edited Payreto Store'),
+(809, '12/02/2022 12:09:27', 'mike.castillo', 'Deleted Event: Survey Time!!'),
+(810, '12/02/2022 12:09:41', 'juan.delacruz@payreto.com', 'Edited Payreto Store'),
+(811, '12/02/2022 12:10:14', 'mike.castillo', 'Deleted Event: Mid-Year Town Hall'),
+(812, '12/02/2022 12:11:50', 'juan.delacruz@payreto.com', 'Edited Payreto Store'),
+(813, '12/02/2022 12:12:51', 'juan.delacruz@payreto.com', 'Edited Payreto Store'),
+(814, '12/02/2022 12:13:57', 'juan.delacruz@payreto.com', 'Edited Payreto Store'),
+(815, '12/02/2022 12:14:27', 'juan.delacruz@payreto.com', 'Edited Foodpanda Account'),
+(816, '12/02/2022 12:18:53', 'juan.delacruz@payreto.com', 'Edited Internal Training Request'),
+(817, '12/02/2022 12:22:13', 'juan.delacruz@payreto.com', 'Edited List of Open Requisitions'),
+(818, '12/02/2022 12:22:22', 'juan.delacruz@payreto.com', 'Edited List of Open Requisitions'),
+(819, '12/02/2022 12:25:04', 'juan.delacruz@payreto.com', 'Edited Requests'),
+(820, '12/02/2022 12:25:23', 'juan.delacruz@payreto.com', 'Edited Requests'),
+(821, '12/02/2022 12:25:51', 'juan.delacruz@payreto.com', 'Edited Requests'),
+(822, '12/02/2022 12:25:58', 'juan.delacruz@payreto.com', 'Edited Requests'),
+(823, '12/02/2022 12:27:14', 'juan.delacruz@payreto.com', 'Edited Requests'),
+(824, '12/02/2022 12:27:22', 'juan.delacruz@payreto.com', 'Edited Requests'),
+(825, '12/02/2022 13:25:14', 'juan.delacruz@payreto.com', 'Edited Foodpanda Account'),
+(826, '12/02/2022 13:42:02', 'juan.delacruz@payreto.com', 'Edited Post-Event Surveys'),
+(827, '12/02/2022 13:51:04', 'juan.delacruz@payreto.com', 'Edited Employee Concerns'),
+(828, '12/02/2022 14:01:48', 'juan.delacruz@payreto.com', 'Edited Company Policies and Procedures'),
+(829, '12/02/2022 14:02:29', 'juan.delacruz@payreto.com', 'Edited Code of Conduct'),
+(830, '12/02/2022 14:03:57', 'juan.delacruz@payreto.com', 'Edited Training Request'),
+(831, '12/02/2022 14:04:13', 'juan.delacruz@payreto.com', 'Edited Multimedia and Communications Support'),
+(832, '12/02/2022 14:06:00', 'juan.delacruz@payreto.com', 'Edited List of Open Requisitions'),
+(833, '12/02/2022 14:08:08', 'juan.delacruz@payreto.com', 'Edited List of Intern Positions'),
+(834, '12/02/2022 14:09:00', 'juan.delacruz@payreto.com', 'Deleted Event: How to be like me!!'),
+(835, '12/02/2022 14:09:14', 'juan.delacruz@payreto.com', 'Deleted Event: Ben '),
+(836, '12/02/2022 14:20:31', 'juan.delacruz@payreto.com', 'Edited Requests'),
+(837, '12/02/2022 14:20:40', 'juan.delacruz@payreto.com', 'Edited Requests'),
+(838, '12/02/2022 14:28:46', 'juan.delacruz@payreto.com', 'Edited Technology Request Form'),
+(839, '12/02/2022 16:12:42', 'mike.castillo', 'Edited Employee Retirement Program'),
+(840, '12/02/2022 16:13:49', 'mike.castillo', 'Edited Employee Retirement Program'),
+(841, '12/02/2022 16:14:26', 'mike.castillo', 'Edited Employee Retirement Program'),
+(842, '12/02/2022 16:14:38', 'mike.castillo', 'Edited Payroll Adjustment Form'),
+(843, '12/02/2022 16:14:43', 'mike.castillo', 'Edited Payroll Dispute Inquiry'),
+(844, '12/02/2022 16:14:51', 'mike.castillo', 'Edited Payroll Dispute Inquiry'),
+(845, '12/02/2022 16:14:57', 'mike.castillo', 'Edited Update of Employee Records'),
+(846, '12/02/2022 16:15:03', 'mike.castillo', 'Edited Request of Employee Records'),
+(847, '12/02/2022 16:15:10', 'mike.castillo', 'Edited Request for Supply Purchase'),
+(848, '12/02/2022 16:15:15', 'mike.castillo', 'Edited Request for Office Equipment Purchase'),
+(849, '12/02/2022 16:16:15', 'mike.castillo', 'Editted Schedule Concerns'),
+(850, '12/02/2022 16:16:22', 'mike.castillo', 'Editted Statutory Benefits - PhilHealth'),
+(851, '12/02/2022 16:16:26', 'mike.castillo', 'Edited Statutory Benefits - SSS'),
+(852, '12/02/2022 16:16:32', 'mike.castillo', 'Edited Statutory Benefits - PAG-IBIG'),
+(853, '12/02/2022 16:16:40', 'mike.castillo', 'Edited Leave'),
+(854, '12/02/2022 16:23:10', 'mike.castillo', 'Deleted Position: Test'),
+(855, '12/02/2022 16:25:00', 'mike.castillo', 'Deleted Event: UwU'),
+(856, '12/02/2022 17:01:04', 'mike.castillo', 'Edited user: Richmond@sample.com'),
+(857, '12/02/2022 17:03:41', 'mike.castillo', 'Edited user: pat.tria@payreto.com'),
+(858, '12/02/2022 17:04:07', 'mike.castillo', 'Edited user: Richmond@sample.com'),
+(859, '12/02/2022 17:11:11', '', 'Reset password of user: testtest@payreto.com'),
+(860, '12/02/2022 17:11:35', 'mike.castillo', 'Reset password of user: testtest@payreto.com'),
+(861, '12/02/2022 17:13:40', 'mike.castillo', 'Added user: vae.bae@nijisanji.com'),
+(862, '12/02/2022 17:16:39', 'mike.castillo', 'Edited user: vae.bae@nijisanji.com'),
+(863, '12/02/2022 17:16:46', 'mike.castillo', 'Reset password of user: Veibaevae.bae@nijisanji.com'),
+(864, '12/02/2022 17:16:50', 'mike.castillo', 'Deleted user: Veibae'),
+(865, '12/02/2022 17:18:14', 'mike.castillo', 'Added user: asdf'),
+(866, '12/02/2022 17:18:36', 'mike.castillo', 'Added user: asdf'),
+(867, '12/02/2022 17:18:42', 'mike.castillo', 'Deleted user: asdf'),
+(868, '12/02/2022 17:18:50', 'mike.castillo', 'Added user: asdf'),
+(869, '12/02/2022 17:18:56', 'mike.castillo', 'Deleted user: asdf'),
+(870, '12/05/2022 11:53:40', 'juan.delacruz@payreto.com', 'Edited List of Open Requisitions'),
+(871, '12/05/2022 11:53:46', 'juan.delacruz@payreto.com', 'Deleted Position: test'),
+(872, '12/05/2022 11:54:09', 'juan.delacruz@payreto.com', 'Deleted Position: Test'),
+(873, '12/05/2022 11:54:31', 'juan.delacruz@payreto.com', 'Deleted Event: fuyioh?'),
+(874, '12/05/2022 11:55:58', 'juan.delacruz@payreto.com', 'Edited Business Continuity Plan'),
+(875, '12/05/2022 11:57:07', 'juan.delacruz@payreto.com', 'Edited Business Continuity Plan'),
+(876, '12/05/2022 11:57:26', 'juan.delacruz@payreto.com', 'Edited Incident/Accident Report'),
+(877, '12/05/2022 11:58:51', 'juan.delacruz@payreto.com', 'Edited On-Site Medicine Request'),
+(878, '12/05/2022 11:59:09', 'juan.delacruz@payreto.com', 'Company Nurse Assistance Request'),
+(879, '12/05/2022 11:59:48', 'juan.delacruz@payreto.com', 'Edited Employee Retirement Program'),
+(880, '12/05/2022 12:00:05', 'juan.delacruz@payreto.com', 'Edited Payroll Adjustment Form'),
+(881, '12/05/2022 12:00:18', 'juan.delacruz@payreto.com', 'Edited Payroll Dispute Inquiry'),
+(882, '12/05/2022 12:00:54', 'juan.delacruz@payreto.com', 'Edited Update of Employee Records'),
+(883, '12/05/2022 12:01:04', 'juan.delacruz@payreto.com', 'Edited Request of Employee Records'),
+(884, '12/05/2022 12:01:27', 'juan.delacruz@payreto.com', 'Edited Request for Supply Purchase'),
+(885, '12/05/2022 12:01:45', 'juan.delacruz@payreto.com', 'Edited Request for Office Equipment Purchase'),
+(886, '12/05/2022 15:04:41', 'juan.delacruz@payreto.com', 'Edited Business Continuity Plan'),
+(887, '12/05/2022 15:19:24', 'juan.delacruz@payreto.com', 'Edited Workplace Condition Report Form'),
+(888, '12/05/2022 15:22:45', 'juan.delacruz@payreto.com', 'Company Nurse Assistance Request'),
+(889, '12/05/2022 15:23:35', 'juan.delacruz@payreto.com', 'Edited Workplace Condition Report Form'),
+(890, '12/05/2022 15:25:32', 'juan.delacruz@payreto.com', 'Edited Workplace Condition Report Form'),
+(891, '12/05/2022 15:27:56', 'juan.delacruz@payreto.com', 'Edited Expense Reimbursement Form'),
+(892, '12/05/2022 15:28:45', 'juan.delacruz@payreto.com', 'Edited Expense Reimbursement Form'),
+(893, '12/05/2022 15:29:26', 'juan.delacruz@payreto.com', 'Edited Expense Reimbursement Form'),
+(894, '12/05/2022 15:29:51', 'juan.delacruz@payreto.com', 'Edited Expense Reimbursement Form'),
+(895, '12/05/2022 15:30:07', 'juan.delacruz@payreto.com', 'Edited Expense Reimbursement Form'),
+(896, '12/05/2022 15:31:00', 'juan.delacruz@payreto.com', 'Company Nurse Assistance Request'),
+(897, '12/05/2022 15:42:09', 'juan.delacruz@payreto.com', 'Edited Occupational Safety and Health'),
+(898, '12/05/2022 15:59:56', 'juan.delacruz@payreto.com', 'Edited BYOD Request Form'),
+(899, '12/05/2022 16:30:25', 'juan.delacruz@payreto.com', 'Edited Occupational Safety and Health'),
+(900, '12/05/2022 16:31:15', 'juan.delacruz@payreto.com', 'Edited Occupational Safety and Health'),
+(901, '12/05/2022 16:35:00', 'juan.delacruz@payreto.com', 'Edited Occupational Safety and Health'),
+(902, '12/06/2022 07:49:24', 'juan.delacruz@payreto.com', 'Edited Business Continuity Plan'),
+(903, '12/06/2022 07:50:36', 'juan.delacruz@payreto.com', 'Edited Incident/Accident Report'),
+(904, '12/06/2022 08:12:51', 'juan.delacruz@payreto.com', 'Edited Occupational Safety and Health'),
+(905, '12/06/2022 08:13:22', 'juan.delacruz@payreto.com', 'Edited Occupational Safety and Health'),
+(906, '12/06/2022 08:13:34', 'juan.delacruz@payreto.com', 'Edited Occupational Safety and Health'),
+(907, '12/06/2022 08:20:00', 'juan.delacruz@payreto.com', 'Edited Incident/Accident Report'),
+(908, '12/06/2022 08:20:21', 'juan.delacruz@payreto.com', 'Edited Incident/Accident Report'),
+(909, '12/06/2022 08:21:31', 'juan.delacruz@payreto.com', 'Edited Occupational Safety and Health'),
+(910, '12/06/2022 08:30:50', 'juan.delacruz@payreto.com', 'Edited On-Site Medicine Request'),
+(911, '12/06/2022 08:32:13', 'juan.delacruz@payreto.com', 'Edited On-Site Medicine Request'),
+(912, '12/06/2022 08:32:45', 'juan.delacruz@payreto.com', 'Edited On-Site Medicine Request'),
+(913, '12/06/2022 08:33:27', 'juan.delacruz@payreto.com', 'Edited On-Site Medicine Request'),
+(914, '12/06/2022 08:33:35', 'juan.delacruz@payreto.com', 'Edited On-Site Medicine Request'),
+(915, '12/06/2022 08:33:53', 'juan.delacruz@payreto.com', 'Edited Workplace Condition Report Form'),
+(916, '12/06/2022 08:34:22', 'juan.delacruz@payreto.com', 'Edited Workplace Condition Report Form'),
+(917, '12/06/2022 08:35:14', 'juan.delacruz@payreto.com', 'Edited Incident/Accident Report'),
+(918, '12/06/2022 08:37:10', 'juan.delacruz@payreto.com', 'Edited Workplace Condition Report Form'),
+(919, '12/06/2022 08:40:58', 'juan.delacruz@payreto.com', 'Edited Workplace Condition Report Form'),
+(920, '12/06/2022 08:42:13', 'juan.delacruz@payreto.com', 'Edited Workplace Condition Report Form'),
+(921, '12/06/2022 08:42:26', 'juan.delacruz@payreto.com', 'Edited On-Site Medicine Request'),
+(922, '12/06/2022 08:42:46', 'juan.delacruz@payreto.com', 'Company Nurse Assistance Request'),
+(923, '12/06/2022 08:43:45', 'juan.delacruz@payreto.com', 'Company Nurse Assistance Request'),
+(924, '12/06/2022 08:47:24', 'juan.delacruz@payreto.com', 'Edited Requests'),
+(925, '12/06/2022 08:49:23', 'juan.delacruz@payreto.com', 'Edited Requests'),
+(926, '12/06/2022 08:55:30', 'juan.delacruz@payreto.com', 'Edited Requests'),
+(927, '12/06/2022 08:56:00', 'juan.delacruz@payreto.com', 'Edited Requests'),
+(928, '12/06/2022 08:56:06', 'juan.delacruz@payreto.com', 'Edited Requests'),
+(929, '12/06/2022 08:56:12', 'juan.delacruz@payreto.com', 'Edited Requests'),
+(930, '12/06/2022 08:56:18', 'juan.delacruz@payreto.com', 'Edited Requests'),
+(931, '12/06/2022 08:59:27', 'juan.delacruz@payreto.com', 'Edited Expense Reimbursement Form'),
+(932, '12/06/2022 09:02:21', 'juan.delacruz@payreto.com', 'Edited Expense Reimbursement Form'),
+(933, '12/06/2022 09:04:19', 'juan.delacruz@payreto.com', 'Edited Expense Reimbursement Form'),
+(934, '12/06/2022 09:09:16', 'juan.delacruz@payreto.com', 'Edited Expense Reimbursement Form'),
+(935, '12/06/2022 09:10:07', 'juan.delacruz@payreto.com', 'Edited List of OSH Programs and Activites'),
+(936, '12/06/2022 09:23:12', 'juan.delacruz@payreto.com', 'Edited Incident Report Form'),
+(937, '12/06/2022 10:00:07', 'juan.delacruz@payreto.com', 'Edited Payreto Store'),
+(938, '12/06/2022 10:00:22', 'juan.delacruz@payreto.com', 'Edited Payreto Store'),
+(939, '12/06/2022 10:25:49', 'juan.delacruz@payreto.com', 'Edited Foodpanda Account'),
+(940, '12/06/2022 10:26:26', 'juan.delacruz@payreto.com', 'Edited Foodpanda Account'),
+(941, '12/06/2022 10:28:17', 'juan.delacruz@payreto.com', 'Edited Activities and Events'),
+(942, '12/06/2022 10:28:27', 'juan.delacruz@payreto.com', 'Deleted Event: Test'),
+(943, '12/06/2022 10:28:40', 'juan.delacruz@payreto.com', 'Edited Post-Event Surveys'),
+(944, '12/06/2022 10:28:52', 'juan.delacruz@payreto.com', 'Deleted Event: How to train your cat to play Jazz'),
+(945, '12/06/2022 10:28:59', 'juan.delacruz@payreto.com', 'Deleted Event: test'),
+(946, '12/06/2022 10:29:44', 'juan.delacruz@payreto.com', 'Edited Company Policies and Procedures'),
+(947, '12/06/2022 10:30:33', 'juan.delacruz@payreto.com', 'Edited Employee Handbook'),
+(948, '12/06/2022 10:31:49', 'juan.delacruz@payreto.com', 'Edited Code of Conduct'),
+(949, '12/06/2022 10:32:47', 'juan.delacruz@payreto.com', 'Edited Performance Management'),
+(950, '12/21/2022 09:37:48', 'juan.delacruz@payreto.com', 'Add Birthday Celebrant'),
+(951, '01/03/2023 15:25:09', 'juan.delacruz@payreto.com', 'Edited Performance Management'),
+(952, '01/11/2023 09:38:53', 'juan.delacruz@payreto.com', 'Edited Expense Reimbursement Form'),
+(953, '01/11/2023 09:39:17', 'juan.delacruz@payreto.com', 'Edited Expense Reimbursement Form'),
+(954, '01/11/2023 09:41:31', 'juan.delacruz@payreto.com', 'Edited Expense Reimbursement Form'),
+(955, '01/11/2023 09:42:28', 'juan.delacruz@payreto.com', 'Edited Expense Reimbursement Form'),
+(956, '01/11/2023 09:43:26', 'juan.delacruz@payreto.com', 'Edited Expense Reimbursement Form'),
+(957, '01/11/2023 09:43:59', 'juan.delacruz@payreto.com', 'Edited Expense Reimbursement Form'),
+(958, '01/11/2023 09:44:13', 'juan.delacruz@payreto.com', 'Edited Expense Reimbursement Form'),
+(959, '01/17/2023 13:39:54', 'juan.delacruz@payreto.com', 'Editted Schedule Concerns'),
+(960, '01/17/2023 13:40:23', 'juan.delacruz@payreto.com', 'Editted Statutory Benefits - PhilHealth'),
+(961, '01/17/2023 13:40:38', 'juan.delacruz@payreto.com', 'Edited Statutory Benefits - SSS'),
+(962, '01/17/2023 13:40:49', 'juan.delacruz@payreto.com', 'Edited Statutory Benefits - PAG-IBIG'),
+(963, '01/20/2023 17:07:34', 'juan.delacruz@payreto.com', 'Edited List of Open Requisitions'),
+(964, '01/20/2023 17:09:16', 'juan.delacruz@payreto.com', 'Edited List of Open Requisitions'),
+(965, '01/20/2023 17:19:06', 'juan.delacruz@payreto.com', 'Edited Post-Event Surveys');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `bday`
+--
+
+CREATE TABLE `bday` (
+  `bday_id` int(11) NOT NULL,
+  `bday_name` varchar(250) DEFAULT NULL,
+  `bday_date` date DEFAULT NULL,
+  `bday_date_cur` date DEFAULT NULL,
+  `pic_path` varchar(250) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `bday`
+--
+
+INSERT INTO `bday` (`bday_id`, `bday_name`, `bday_date`, `bday_date_cur`, `pic_path`) VALUES
+(11, 'Test', '2022-12-30', '2022-12-13', '../homepage/assets/img/resource.jpg'),
+(19, 'qwe', '2023-01-01', '2022-12-20', '/Employee-Portal-v2/admin/homepage/assets/img/credit-logo-1.png'),
+(21, 'test log', '2022-01-01', '2022-12-21', '/Employee-Portal-v2/admin/homepage/assets/img/credit-logo-1.png');
 
 -- --------------------------------------------------------
 
@@ -786,7 +999,6 @@ INSERT INTO `audit_logs` (`id`, `dtime`, `uname`, `form`) VALUES
 -- Table structure for table `ebp_leave`
 --
 
-DROP TABLE IF EXISTS `ebp_leave`;
 CREATE TABLE `ebp_leave` (
   `l_leave` varchar(25) NOT NULL,
   `content` varchar(10000) NOT NULL
@@ -801,7 +1013,7 @@ INSERT INTO `ebp_leave` (`l_leave`, `content`) VALUES
 ('battered', 'Sample7'),
 ('bereavement', 'Sample11'),
 ('client_holiday', 'Sample12'),
-('emergency', 'Sample3'),
+('emergency', 'Sample3333'),
 ('maternity', 'Sample5'),
 ('paternity', 'Sample6'),
 ('service_incentive', 'Sample13'),
@@ -817,7 +1029,6 @@ INSERT INTO `ebp_leave` (`l_leave`, `content`) VALUES
 -- Table structure for table `empportcredentials`
 --
 
-DROP TABLE IF EXISTS `empportcredentials`;
 CREATE TABLE `empportcredentials` (
   `ID` int(4) NOT NULL,
   `uname` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
@@ -838,19 +1049,20 @@ CREATE TABLE `empportcredentials` (
 --
 
 INSERT INTO `empportcredentials` (`ID`, `uname`, `FN`, `LN`, `role`, `location`, `department`, `email`, `password`, `admin`, `admin_oa`, `img`) VALUES
-(1, 'JDelaCruz', 'Juan', 'Dela Cruz', 'Web Developer', 'Manila', 'PSD', 'juan.delacruz@payreto.com', '$2y$10$1gISqHUqtMPgQ/fJJfxdqeHXEcNAVwuYlLwG7ULx/O0xMh0Zhza3u', 1, 1, 'ahnyeoseop.jpg'),
+(1, 'juan.delacruz@payreto.com', 'Juan', 'Dela Cruz', 'Web Developer', 'Manila', 'PSD', 'juan.delacruz@payreto.com', '$2y$10$Ac1xPHCDZdnv9.TzSIn/qexqWQMV5qbk251JCbsmOcANlhymY.Wvi', 1, 1, 'ahnyeoseop.jpg'),
 (2, 'juanitadc', 'Juanita', 'Dela Cruz', 'Talent Acquisition Intern', 'Manila', 'People Services Department', 'juanita.delacruz@payreto.com', '$2y$09$aq8C8XypiK/jR2a2xgtwwuRfLDqdofDe4hQc83JPirigW05JSMIJa', 3, 0, 'image0.jpeg'),
 (3, 'jdoe', 'John', 'Doe', 'IT Helpdesk Intern', 'Manila', 'People Services Department', 'john.doe@payreto.com', '$2y$10$hTb9qv5Eb6k5tuqUfxO0OeGHUgkn7NzWjipFXvvIUg7VFxlfac77a', 6, 0, 'Wev deb.png'),
-(10, 'test', 'test', 'test', 'test@payreto.com', 'test', 'test', 'test@payreto.com', '$2y$10$XDFkAq8I.oS0ff7NSSPWd.WbuG84MEn.IL1aHfP7b6JTNOjH4.geO', 2, 0, 'avatar_default.png'),
-(11, 'test2', 'test2', 'test2', 'test2@payreto.com', 'test', 'test', 'test2@payreto.com', '$2y$10$cc5GRw2iEqM.Hgea8V41Weryc3Vxu8KO8lsuXCTYCS145iK2TmSVC', 4, 0, 'avatar_default.png'),
+(10, 'test', 'test', 'test', 'test@payreto.com', 'test', 'test', 'test@payreto.com', '$2y$10$zzUPSrjReaHZCOZheTjRJuxANQYvIfddTbAupzzKlLk/zDX.n/8TK', 2, 0, 'avatar_default.png'),
 (34, 'mhikko.ilagan', 'Mhikko', 'Ilagan', 'VP People Services', 'Metro Manila', 'People Services Department', 'mhikko.ilagan@portal.com', '$2y$10$n6dbJuy6IOvTBDI23oWhkeLQNdK9a8txauCivGrNrqIrlYaMSPAHi', 7, 1, 'Mhikko-Ilagan-1-min-683x1024.jpg'),
-(35, 'mike.castillo', 'Michael', 'Castillo', 'Web Developer Intern', 'Quezon City', 'People Services Department', 'psmichaelcastillo.payretointern@gmail.com', '$2y$10$UCS2PtyV9h/iCQMy6GQOAepvD/WAlpe63nGxmPLtHLmwj46YFWhLu', 7, 1, 'mock-up (15).png'),
-(62, 'Richmond.Estella', 'Rich', 'Mond', 'P&#039;Management', 'Manila', 'People Services Department', 'Richmond@sample.com', '$2y$10$Nbqv3eaxPcDqsq5USLtjm.RWpe8YYOsVaHUm3BTBKg1b/78qjziZm', 0, 0, 'avatar_default.png'),
+(35, 'mike.castillo', 'Michael', 'Castillo', 'Web Developer Intern', 'Quezon City', 'People Services Department', 'psmichaelcastillo.payretointern@gmail.com', '$2y$10$VjWnylqOzfk7HzAFRC6VLuXO7V0UhkC6wzunkvFtf4g3mnRyS7nuK', 7, 1, 'mock-up (15).png'),
+(62, 'Richmond.Estella', 'Rich', 'Mond', 'P&#039;Management', 'Manila', 'People Services Department', 'Richmond@sample.com', '$2y$10$Nbqv3eaxPcDqsq5USLtjm.RWpe8YYOsVaHUm3BTBKg1b/78qjziZm', 5, 0, 'avatar_default.png'),
 (63, 'drake.jordan', 'Drake', 'Jordan', 'IT Helpdesk Intern', 'Manila', 'IT Helpdesk', 'drake.jordan@sample.com', '$2y$10$rt0m0mUwDeMLPrxZ3VKE0uYCiyuM.vfHhK6y5otJLs9eZABHQAk3q', 6, 0, 'avatar_default.png'),
-(64, 'mj.goyon', 'Michael Joseph', 'Goyon', 'Web Dev Intern', 'Manila', 'People Services Department', 'psmichaelgoyon.payretointern@gmail.com', '$2y$10$Frf0zd38nkRk0hx0.q9BRul99y5fkpaXf00SqbRYgCF07pandi6Ga', 7, 1, '3.png'),
+(64, 'mj.goyon', 'Michael Joseph', 'Goyon', 'Web Dev Intern', 'Manila', 'People Services Department', 'psmichaelgoyon.payretointern@gmail.com', '$2y$10$cPN5TqJoFQFBm7ayuCNTbu8mofa8lC0Rk2WDGPaAYXvnKzUUwRgLS', 7, 1, '3.png'),
 (65, 'patrick.gonzales', 'Patrick', 'Gonzales', 'Intern', 'Manila', 'People Services Department', 'pat.gonzales@payreto.com', '$2y$10$jGLfqzVLzjq4o6fgoBvC7u.U2VFW9UKYGcVM8iKGLtAFSHivtcqaS', 2, 0, 'avatar_default.png'),
 (66, 'jae.sangalang', 'Jae', 'Sangalang', 'Intern', 'Manila', 'People Services Department', 'jae.sangalang@payreto.com', '$2y$10$iyaNYDI.yepNk4O9gNpqNuu8coi.zlDDpQs7sumDxR.A6f3L804rm', 4, 0, 'avatar_default.png'),
-(67, 'patrick.tria', 'Patrick', 'Tria', 'Intern', 'Manila', 'People Services Department', 'pat.tria@payreto.com', '$2y$10$a30jB.YkAczOYCKGcxUWbe8rlKkjmj93TxzdMnRUAlkSrJ9QjPs2u', 3, 0, 'avatar_default.png');
+(67, 'patrick.tria', 'Patrick', 'Tria', 'Intern', 'Manila', 'People Services Department', 'pat.tria@payreto.com', '$2y$10$a30jB.YkAczOYCKGcxUWbe8rlKkjmj93TxzdMnRUAlkSrJ9QjPs2u', 1, 0, 'avatar_default.png'),
+(68, 'Banana', 'Banana', 'Ananab', 'Web Developer Intern', 'Metro Manila', 'PMD', 'Banana.ananab@gmail.com', '$2y$10$BQPoL.aLVZj9W1rsz3yer.mxPr.tszHWFD.TqHfTONhDH5EFNAoUS', 0, 0, 'avatar_default.png'),
+(69, 'womp.wompus', 'wompusus', 'womp', 'wompus', 'wompington', 'Womp Deppp', 'wompus@gmail.com', '$2y$10$Jkgf4gG08azE8Uq.lzp7QOIfSD6YXcUibkWmeOVn5tlm4df.xZIj2', 7, 1, 'avatar_default.png');
 
 -- --------------------------------------------------------
 
@@ -858,7 +1070,6 @@ INSERT INTO `empportcredentials` (`ID`, `uname`, `FN`, `LN`, `role`, `location`,
 -- Table structure for table `events_activities`
 --
 
-DROP TABLE IF EXISTS `events_activities`;
 CREATE TABLE `events_activities` (
   `e_id` int(50) NOT NULL,
   `e_name` varchar(255) NOT NULL,
@@ -875,11 +1086,9 @@ CREATE TABLE `events_activities` (
 --
 
 INSERT INTO `events_activities` (`e_id`, `e_name`, `e_team`, `e_date`, `e_content`, `e_poster`, `e_posted`, `e_img`) VALUES
-(19, 'How to be a &amp;quot;Programmer&amp;quot; 101', 'P&amp;#039;Sol Deez Nuts', '2022-08-25', 'asdasd&amp;quot;asd&amp;quot;asdad&amp;#039;&amp;#039;asdasd&amp;quot;&amp;#039;&amp;#039;Asdasdasd', 'JDelaCruz', '08/24/2022', '../people_management/assets/files/image222s.jpg'),
+(19, 'How to be a &amp;quot;Programmer&amp;quot; 101', 'P&amp;#039;Sol Deez Nuts', '2022-08-25', 'asdasd&amp;quot;asd&amp;quot;asdad&amp;#039;&amp;#039;asdasd&amp;quot;&amp;#039;&amp;#039;Asdasdasd', 'JDelaCruz', '08/24/2022', '/Employee-Portal-v2/people_management/assets/files/image222s.jpg'),
 (21, 'meep morp', 'P&amp;#039;Solutions', '2022-08-26', 'meeeeeeeeeeeeeeeeep', 'JDelaCruz', '08/25/2022', ''),
-(24, 'How to train your cat to play jazz', 'P&amp;#039;Solutions', '2022-09-10', 'Just ask it to play you some jazz, it works 11/10', 'JDelaCruz', '08/25/2022', '../people_management/assets/files/b9a72495a57000f0c38f32fcebca8726_400x400.jpeg'),
-(27, 'Ben &amp;amp; Ben Live @ Payreto Office Penthouse B!', 'People Admin', '2022-09-09', 'OH EM GEE \r\n\r\nThey&amp;#039;re going to be like, so live at that time. \r\n\r\nI cannot believe it, like, Oh Em Geeeee!!!', 'JDelaCruz', '09/01/2022', ''),
-(28, 'Patrick Tria, EXPOSED! Click here to know more!', 'P&amp;#039;Solutions', '2022-09-10', 'Asdfsdfsdfs\r\naSDFSDFSdfS\r\nSDFSFSdf\r\nSDfsDFsdFsdF\r\nSDFsDfsdfSdf\r\nSDFdsFsdfsDF\r\nScandal', 'JDelaCruz', '09/02/2022', '../people_management/assets/files/image0.jpeg');
+(24, 'How to train your cat to play jazz', 'P&amp;#039;Solutions', '2022-09-10', 'Just ask it to play you some jazz, it works 11/10', 'JDelaCruz', '08/25/2022', '/Employee-Portal-v2/people_management/assets/files/b9a72495a57000f0c38f32fcebca8726_400x400.jpeg');
 
 -- --------------------------------------------------------
 
@@ -887,7 +1096,6 @@ INSERT INTO `events_activities` (`e_id`, `e_name`, `e_team`, `e_date`, `e_conten
 -- Table structure for table `e_admin`
 --
 
-DROP TABLE IF EXISTS `e_admin`;
 CREATE TABLE `e_admin` (
   `id` varchar(50) NOT NULL,
   `link` varchar(255) NOT NULL
@@ -898,29 +1106,29 @@ CREATE TABLE `e_admin` (
 --
 
 INSERT INTO `e_admin` (`id`, `link`) VALUES
-('adjustment', ''),
-('concerns_ph', ''),
-('concerns_pi', ''),
-('concerns_sss', ''),
-('contribution_ph', ''),
-('contribution_pi', ''),
-('contribution_sss', ''),
-('dispute', ''),
-('e_purchase', ''),
-('health', ''),
-('hmo', ''),
-('holidays', ''),
-('loan_pi', ''),
-('loan_sss', ''),
-('maternity', ''),
-('mp2', ''),
-('ot', ''),
-('retirement', ''),
-('r_records', ''),
-('shift', ''),
-('s_purchase', ''),
-('time', ''),
-('u_records', '');
+('adjustment', 'https://forms.gle/JkPPtUffq5T6wWrG6'),
+('concerns_ph', 'https://forms.gle/JkPPtUffq5T6wWrG6'),
+('concerns_pi', 'https://forms.gle/JkPPtUffq5T6wWrG6'),
+('concerns_sss', 'https://forms.gle/JkPPtUffq5T6wWrG6'),
+('contribution_ph', 'https://forms.gle/JkPPtUffq5T6wWrG6'),
+('contribution_pi', 'https://forms.gle/JkPPtUffq5T6wWrG6'),
+('contribution_sss', 'https://forms.gle/JkPPtUffq5T6wWrG6'),
+('dispute', 'https://forms.gle/JkPPtUffq5T6wWrG6'),
+('e_purchase', 'https://forms.gle/JkPPtUffq5T6wWrG6'),
+('health', 'https://forms.gle/JkPPtUffq5T6wWrG6'),
+('hmo', 'https://forms.gle/JkPPtUffq5T6wWrG6'),
+('holidays', 'https://forms.gle/JkPPtUffq5T6wWrG6'),
+('loan_pi', 'https://forms.gle/JkPPtUffq5T6wWrG6'),
+('loan_sss', 'https://forms.gle/JkPPtUffq5T6wWrG6'),
+('maternity', 'https://forms.gle/JkPPtUffq5T6wWrG6'),
+('mp2', 'https://forms.gle/JkPPtUffq5T6wWrG6'),
+('ot', 'https://forms.gle/JkPPtUffq5T6wWrG6'),
+('retirement', 'https://forms.gle/JkPPtUffq5T6wWrG6'),
+('r_records', 'https://forms.gle/JkPPtUffq5T6wWrG6'),
+('shift', 'https://forms.gle/JkPPtUffq5T6wWrG6'),
+('s_purchase', 'https://forms.gle/JkPPtUffq5T6wWrG6'),
+('time', 'https://forms.gle/JkPPtUffq5T6wWrG6'),
+('u_records', 'https://forms.gle/JkPPtUffq5T6wWrG6');
 
 -- --------------------------------------------------------
 
@@ -928,7 +1136,6 @@ INSERT INTO `e_admin` (`id`, `link`) VALUES
 -- Table structure for table `health_maintenance`
 --
 
-DROP TABLE IF EXISTS `health_maintenance`;
 CREATE TABLE `health_maintenance` (
   `hmo_id` varchar(25) NOT NULL,
   `content` varchar(2000) NOT NULL
@@ -957,10 +1164,56 @@ INSERT INTO `health_maintenance` (`hmo_id`, `content`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `hp_announcement`
+--
+
+CREATE TABLE `hp_announcement` (
+  `hp_id` int(11) NOT NULL,
+  `hp_desc` varchar(10000) DEFAULT NULL,
+  `hp_title` varchar(255) DEFAULT NULL,
+  `hp_pic` varchar(255) DEFAULT NULL,
+  `announce_date` date DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `hp_announcement`
+--
+
+INSERT INTO `hp_announcement` (`hp_id`, `hp_desc`, `hp_title`, `hp_pic`, `announce_date`) VALUES
+(8, 'qweqwew', 'qweqwe', '', '2023-01-03'),
+(9, 'qweqwew', 'qweqwe', '', '2023-01-03'),
+(10, 'qweqwew', 'qweqwe', '', '2023-01-03'),
+(11, 'qweqwe', 'qweqwe', '../homepage/assets/img/resource.jpg', '2023-01-03'),
+(12, 'qweqweqwe', 'qweqwe', '/Employee-Portal-v2/admin/homepage/assets/img/credit-logo.png', '2023-01-03'),
+(13, 'Pic below', 'With Pic', '/Employee-Portal-v2/admin/homepage/assets/img/credit-logo-1.png', '2023-01-03');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `hp_welcome`
+--
+
+CREATE TABLE `hp_welcome` (
+  `hp_w_id` int(11) NOT NULL,
+  `hp_w_pic` varchar(255) DEFAULT NULL,
+  `hp_wc_title` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `hp_welcome`
+--
+
+INSERT INTO `hp_welcome` (`hp_w_id`, `hp_w_pic`, `hp_wc_title`) VALUES
+(4, '../../homepage/assets/img/', 'qweqwe'),
+(5, '../../homepage/assets/img/credit-logo-1.png', 'qweqwe'),
+(6, '/Employee-Portal-v2/admin/homepage/assets/img/credit-logo-1.png', 'qweqwe');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `intern_positions`
 --
 
-DROP TABLE IF EXISTS `intern_positions`;
 CREATE TABLE `intern_positions` (
   `i_id` int(10) NOT NULL,
   `i_pos` varchar(255) NOT NULL,
@@ -984,7 +1237,6 @@ INSERT INTO `intern_positions` (`i_id`, `i_pos`, `i_num`) VALUES
 -- Table structure for table `it_helpdesk`
 --
 
-DROP TABLE IF EXISTS `it_helpdesk`;
 CREATE TABLE `it_helpdesk` (
   `id` varchar(50) NOT NULL,
   `link` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL
@@ -995,9 +1247,9 @@ CREATE TABLE `it_helpdesk` (
 --
 
 INSERT INTO `it_helpdesk` (`id`, `link`) VALUES
-('awareness', 'assets/files/2021_Payreto_Security_Awareness_Training.pdf'),
-('byod', 'assets/files/BYOD_FORM.pdf'),
-('technology', '../it_helpdesk/assets/files/Technology_Request_Form_-_2019.pdf');
+('awareness', '/Employee-Portal-v2/others/it_helpdesk/assets/files/2021_Payreto_Security_Awareness_Training.pdf'),
+('byod', '/Employee-Portal-v2/others/it_helpdesk/assets/files/BYOD_FORM.pdf'),
+('technology', '/Employee-Portal-v2/others/it_helpdesk/assets/files/Technology_Request_Form_-_2019.pdf');
 
 -- --------------------------------------------------------
 
@@ -1005,7 +1257,6 @@ INSERT INTO `it_helpdesk` (`id`, `link`) VALUES
 -- Table structure for table `open_requisitions`
 --
 
-DROP TABLE IF EXISTS `open_requisitions`;
 CREATE TABLE `open_requisitions` (
   `r_id` int(50) NOT NULL,
   `r_pos` varchar(255) NOT NULL,
@@ -1031,7 +1282,9 @@ INSERT INTO `open_requisitions` (`r_id`, `r_pos`, `r_num`) VALUES
 (12, 'Operations Manager - Bespoke Payments', 5),
 (13, 'Service Delivery Assistant', 5),
 (14, 'Talent Acquisition Specialist', 5),
-(15, 'Technical Support Representative', 5);
+(15, 'Technical Support Representative', 5),
+(31, 'test', 3),
+(32, 'test', 4);
 
 -- --------------------------------------------------------
 
@@ -1039,7 +1292,6 @@ INSERT INTO `open_requisitions` (`r_id`, `r_pos`, `r_num`) VALUES
 -- Table structure for table `osh_programs`
 --
 
-DROP TABLE IF EXISTS `osh_programs`;
 CREATE TABLE `osh_programs` (
   `o_id` int(50) NOT NULL,
   `o_name` varchar(255) NOT NULL,
@@ -1058,9 +1310,8 @@ INSERT INTO `osh_programs` (`o_id`, `o_name`, `o_date`, `o_desc`, `o_poster`, `o
 (2, 'Ado', '2022-08-25', 'ADO IS MY ALL-TIME FAVOURITE JP SINGER &amp;lt;3', 'JDelaCruz', '08/24/2022', '../people_support/assets/files/image0.jpeg'),
 (3, 'Hellnah', '2022-09-01', 'asdfasdfasdfasdfasf', 'JDelaCruz', '08/31/2022', ''),
 (5, 'YipYap', '2022-09-02', 'asdf', 'JDelaCruz', '08/31/2022', ''),
-(8, 'How to be a first-aider', '2022-09-01', 'asdfasdf', 'JDelaCruz', '08/31/2022', ''),
-(9, 'fuyioh?', '2022-09-01', 'Fuyioh!!!!', 'JDelaCruz', '08/31/2022', ''),
-(10, 'UwU', '2022-09-16', 'asdfasdfasdfasdfsf\r\nasdf\r\nasd\r\nfasd\r\nfasd\r\nf\r\nasdf\r\nasdf\r\nasd\r\nfasd\r\nfasd\r\nfas\r\nf', 'JDelaCruz', '09/02/2022', '');
+(8, 'How to be a first-aider', '2022-09-01', 'asdfasdf', 'JDelaCruz', '08/31/2022', '/Employee-Portal-v2/people_support/assets/files/PSD_Monthly_Assembly_-_NOV.jpg'),
+(12, 'This is Test', '2023-01-01', 'This is Test', 'juan.delacruz@payreto.com', '12/06/2022', '');
 
 -- --------------------------------------------------------
 
@@ -1068,7 +1319,6 @@ INSERT INTO `osh_programs` (`o_id`, `o_name`, `o_date`, `o_desc`, `o_poster`, `o
 -- Table structure for table `post_event`
 --
 
-DROP TABLE IF EXISTS `post_event`;
 CREATE TABLE `post_event` (
   `p_id` int(20) NOT NULL,
   `p_name` varchar(255) NOT NULL,
@@ -1081,10 +1331,7 @@ CREATE TABLE `post_event` (
 
 INSERT INTO `post_event` (`p_id`, `p_name`, `p_link`) VALUES
 (29, 'Saruei Live Stream!!!!', 'https://forms.gle/hkEEqVguVLJQr9Qy7'),
-(30, 'How to train your cat to play Jazz', 'https://forms.gle/hkEEqVguVLJQr9Qy7'),
-(34, 'Mid-Year Town Hall', 'https://forms.gle/hkEEqVguVLJQr9Qy7'),
-(35, 'Survey Time!!', 'somesurveylink.com.ph/whatthehell?'),
-(36, 'Pmanagement Event Post-survey', 'https://forms.gle/hkEEqVguVLJQr9Qy7');
+(40, 'test', 'test.com');
 
 -- --------------------------------------------------------
 
@@ -1092,7 +1339,6 @@ INSERT INTO `post_event` (`p_id`, `p_name`, `p_link`) VALUES
 -- Table structure for table `p_acquisition`
 --
 
-DROP TABLE IF EXISTS `p_acquisition`;
 CREATE TABLE `p_acquisition` (
   `id` varchar(255) NOT NULL,
   `link` varchar(2500) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL
@@ -1118,7 +1364,6 @@ INSERT INTO `p_acquisition` (`id`, `link`) VALUES
 -- Table structure for table `p_development`
 --
 
-DROP TABLE IF EXISTS `p_development`;
 CREATE TABLE `p_development` (
   `id` varchar(50) NOT NULL,
   `link` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL
@@ -1132,10 +1377,10 @@ INSERT INTO `p_development` (`id`, `link`) VALUES
 ('account', 'https://docs.google.com/forms/d/e/1FAIpQLSf4p7JkmMjSlaKGaMKyYPv9EGPOYPDL2-qUVJlVPsqFwybL4Q/viewform?pli=1'),
 ('ad', ''),
 ('course', ''),
-('external', ''),
+('external', 'https://docs.google.com/forms/d/e/1FAIpQLSd9fkAUFlNldTFK_TURevrXghbbVSJGp3jXJKO6NXO2NuWJ-w/alreadyresponded?pli=1&pli=1'),
 ('instructional', 'https://docs.google.com/forms/d/e/1FAIpQLSd9fkAUFlNldTFK_TURevrXghbbVSJGp3jXJKO6NXO2NuWJ-w/alreadyresponded?pli=1&pli=1'),
-('internal', ''),
-('multimedia', ''),
+('internal', 'https://docs.google.com/forms/d/e/1FAIpQLSd9fkAUFlNldTFK_TURevrXghbbVSJGp3jXJKO6NXO2NuWJ-w/alreadyresponded?pli=1&pli=1'),
+('multimedia', 'https://docs.google.com/forms/d/e/1FAIpQLSd9fkAUFlNldTFK_TURevrXghbbVSJGp3jXJKO6NXO2NuWJ-w/alreadyresponded?pli=1&pli=1'),
 ('playbook', '');
 
 -- --------------------------------------------------------
@@ -1144,7 +1389,6 @@ INSERT INTO `p_development` (`id`, `link`) VALUES
 -- Table structure for table `p_management`
 --
 
-DROP TABLE IF EXISTS `p_management`;
 CREATE TABLE `p_management` (
   `id` varchar(50) NOT NULL,
   `link` varchar(2500) NOT NULL
@@ -1156,19 +1400,19 @@ CREATE TABLE `p_management` (
 
 INSERT INTO `p_management` (`id`, `link`) VALUES
 ('certificate', 'https://forms.gle/JkPPtUffq5T6wWrG6'),
-('concerns', ''),
-('conduct', ''),
+('concerns', 'https://forms.gle/JkPPtUffq5T6wWrG6'),
+('conduct', '/Employee-Portal-v2/people_operations/people_excellence/assets/files/PSD_Monthly_Assembly_-_NOV.jpg'),
 ('eventform', ''),
-('foodpanda1', 'assets/img/foodpanda.png'),
+('foodpanda1', '/Employee-Portal-v2/people_management/assets/img/foodpanda.png'),
 ('foodpanda2', 'Richmond Estella'),
 ('foodpanda3', 'richmond.estella@payreto.com'),
-('handbook', 'assets/files/Payreto_Employee_Handbook_2020.pdf'),
-('imbursement', 'https://forms.gle/b5VMmguPtKwaKgSG8'),
-('incident', 'assets/files/Incident_Report_Template.pdf'),
+('handbook', '../assets/files/Payreto_Employee_Handbook_2020.pdf'),
+('imbursement', 'https://docs.google.com/forms/d/e/1FAIpQLSef_bI8fnp6D7b3-t5ishZ1-pJkwXFdDNf5aV4qYiTcxHIl2Q/viewform'),
+('incident', '../assets/files/Incident_Report_Template.pdf'),
 ('nomination', 'https://forms.gle/b5VMmguPtKwaKgSG8'),
-('performance', 'assets/files/Performance_EvalForm.pdf'),
-('policy', ''),
-('rewards', ' https://forms.gle/5LAFo6ahbd3DNTYi8');
+('performance', '/Employee-Portal-v2/people_operations/people_excellence/assets/files/PSD_Monthly_Assembly_-_NOV.jpg'),
+('policy', '../assets/files/Incident_Report_Form.pdf'),
+('rewards', 'https://forms.gle/5LAFo6ahbd3DNTYi8');
 
 -- --------------------------------------------------------
 
@@ -1176,7 +1420,6 @@ INSERT INTO `p_management` (`id`, `link`) VALUES
 -- Table structure for table `p_support`
 --
 
-DROP TABLE IF EXISTS `p_support`;
 CREATE TABLE `p_support` (
   `id` varchar(50) NOT NULL,
   `link` varchar(1000) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -1189,27 +1432,27 @@ CREATE TABLE `p_support` (
 
 INSERT INTO `p_support` (`id`, `link`, `type`) VALUES
 ('bcp', 'https://docs.google.com/document/d/1CkCucxn1YzoSQlYDFlHR7TwsPWEjKVUvEqH6bUXlGe4/edit', 0),
-('bcp_i', '', 0),
-('bcp_t', 'assets/img/BCP_Teams_Org_Chart.svg, assets/img/Emergency_Management_Team.svg, assets/img/Communications_Team.svg, assets/img/Emergency_Response_Team.svg, assets/img/Human_Resource_Recovery_Team.svg, assets/img/Administration_Recovery_Team.svg, assets/img/IT_Disaster_Recovery_Team.svg', 1),
+('bcp_i', 'https://docs.google.com/document/d/1CkCucxn1YzoSQlYDFlHR7TwsPWEjKVUvEqH6bUXlGe4/edit', 0),
+('bcp_t', '../assets/img/BCP_Teams_Org_Chart.svg, ../assets/img/Emergency_Management_Team.svg, ../assets/img/Communications_Team.svg, ../assets/img/Emergency_Response_Team.svg, ../assets/img/Human_Resource_Recovery_Team.svg, ../assets/img/Administration_Recovery_Team.svg, ../assets/img/IT_Disaster_Recovery_Team.svg', 1),
 ('call', '', 0),
 ('committee', '', 0),
 ('delivery', '', 0),
-('escape', 'assets/img/EscapePlan_15th.png, assets/img/EscapePlan_GF.png, assets/img/EscapePlan_Outside.png', 1),
+('escape', '../assets/img/EscapePlan_15th.png, ../assets/img/EscapePlan_GF.png, ../assets/img/EscapePlan_Outside.png', 1),
 ('food', 'https://docs.google.com/forms/d/e/1FAIpQLSd9fkAUFlNldTFK_TURevrXghbbVSJGp3jXJKO6NXO2NuWJ-w/viewform?pli=1&pli=1&pli=1', 0),
-('health', '', 0),
-('incident', '', 0),
+('health', '/Employee-Portal-v2/people_services/people_support/assets/files/PSD_Monthly_Assembly_-_NOV.jpg', 0),
+('incident', '/Employee-Portal-v2/people_services/people_support/assets/files/PSD_Monthly_Assembly_-_NOV.jpg', 0),
 ('load', '', 0),
-('medicine', '', 0),
-('nurse', '', 0),
+('medicine', '/Employee-Portal-v2/people_services/people_support/assets/files/2Incident_Report_Form.pdf', 0),
+('nurse', '/Employee-Portal-v2/people_services/people_support/assets/files/2Incident_Report_Form.pdf', 0),
 ('osh', '', 0),
 ('parking', 'Earl', 0),
 ('parking2', 'earl.estioco@payreto.com', 0),
-('reimbursement', 'assets/files/Admin_Expense_Reimbursement_Form_April_12_2022.pdf', 1),
-('repair', 'https://docs.google.com/forms/d/e/1FAIpQLSdSnsQ6rkCjcO-KK9DEZteBBIxbFBCgoNbwa6co50-1XCGmEg/viewform', 0),
+('reimbursement', '/Employee-Portal-v2/people_services/people_support/assets/files/231265960_542454497001141_7502940199592721882_n.jpg', 1),
+('repair', 'https://docs.google.com/forms/d/e/1FAIpQLSdSnsQ6rk...', 0),
 ('room', '', 0),
-('supply', 'assets/files/pricelist-31.pdf', 1),
+('supply', '../assets/files/pricelist-31.pdf', 1),
 ('transpo', '', 0),
-('workplace', '', 0);
+('workplace', '/Employee-Portal-v2/people_services/people_support/assets/files/2Incident_Report_Form.pdf', 0);
 
 --
 -- Indexes for dumped tables
@@ -1220,6 +1463,12 @@ INSERT INTO `p_support` (`id`, `link`, `type`) VALUES
 --
 ALTER TABLE `audit_logs`
   ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `bday`
+--
+ALTER TABLE `bday`
+  ADD PRIMARY KEY (`bday_id`);
 
 --
 -- Indexes for table `ebp_leave`
@@ -1251,6 +1500,18 @@ ALTER TABLE `e_admin`
 --
 ALTER TABLE `health_maintenance`
   ADD PRIMARY KEY (`hmo_id`);
+
+--
+-- Indexes for table `hp_announcement`
+--
+ALTER TABLE `hp_announcement`
+  ADD PRIMARY KEY (`hp_id`);
+
+--
+-- Indexes for table `hp_welcome`
+--
+ALTER TABLE `hp_welcome`
+  ADD PRIMARY KEY (`hp_w_id`);
 
 --
 -- Indexes for table `intern_positions`
@@ -1314,41 +1575,67 @@ ALTER TABLE `p_support`
 -- AUTO_INCREMENT for table `audit_logs`
 --
 ALTER TABLE `audit_logs`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=773;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=966;
+
+--
+-- AUTO_INCREMENT for table `bday`
+--
+ALTER TABLE `bday`
+  MODIFY `bday_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT for table `empportcredentials`
 --
 ALTER TABLE `empportcredentials`
-  MODIFY `ID` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=68;
+  MODIFY `ID` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=74;
 
 --
 -- AUTO_INCREMENT for table `events_activities`
 --
 ALTER TABLE `events_activities`
-  MODIFY `e_id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
+  MODIFY `e_id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
+
+--
+-- AUTO_INCREMENT for table `hp_announcement`
+--
+ALTER TABLE `hp_announcement`
+  MODIFY `hp_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+
+--
+-- AUTO_INCREMENT for table `hp_welcome`
+--
+ALTER TABLE `hp_welcome`
+  MODIFY `hp_w_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `intern_positions`
 --
 ALTER TABLE `intern_positions`
-  MODIFY `i_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `i_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `open_requisitions`
 --
 ALTER TABLE `open_requisitions`
-  MODIFY `r_id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+  MODIFY `r_id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
 
 --
 -- AUTO_INCREMENT for table `osh_programs`
 --
 ALTER TABLE `osh_programs`
-  MODIFY `o_id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `o_id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `post_event`
 --
 ALTER TABLE `post_event`
-  MODIFY `p_id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
+  MODIFY `p_id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+
+DELIMITER $$
+--
+-- Events
+--
+CREATE DEFINER=`root`@`localhost` EVENT `e_daily` ON SCHEDULE EVERY 10 SECOND STARTS '2022-12-13 15:34:55' ON COMPLETION PRESERVE ENABLE COMMENT 'this is to delete bday records after bday' DO DELETE FROM `bday` WHERE NOW() > bday_date$$
+
+DELIMITER ;
 COMMIT;
